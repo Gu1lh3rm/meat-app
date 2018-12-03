@@ -145,3 +145,14 @@ Dependências dos pacotes que devem ficar em package.json:
 ## Créditos
 
 Todas as imagens usadas na aplicação são pertencentes a freepik.com
+
+# GERANDO PRIMEIRA APLICAÇÃO
+
+`ng new jedi-academy --prefix=jad`
+
+# GERAR COMPONENTE SEM MODE TESTE
+
+`ng g c student --spec=false`
+
+# INSTALAR BIBLIOTEC json-server PARA EMULAR BACKEND MOCADO
+npm install -g json-server
