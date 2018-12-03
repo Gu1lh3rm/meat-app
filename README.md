@@ -156,3 +156,6 @@ Todas as imagens usadas na aplicação são pertencentes a freepik.com
 
 # INSTALAR BIBLIOTEC json-server PARA EMULAR BACKEND MOCADO
 npm install -g json-server
+
+## Start backend json-server
+json-server db.json
