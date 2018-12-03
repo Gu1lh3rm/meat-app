@@ -21,9 +21,15 @@ export class RestaurantService {
       .catch(ErrorHandler.handlerError);
   }
 
-  findRestaurantsById(id: string): Observable<RestaurantModel> {
+  findRestaurantById(id: string): Observable<RestaurantModel> {
     return this.http.get(`${API_CONFIG.baseUrl}${API_CONFIG.phatRestaurants}/${id}`)
     .map(response => response.json())
     .catch(ErrorHandler.handlerError);
-}
+  }
+
+  reviewsOfRestaurant(id: string): Observable<any> {
+    return this.http.get(`${API_CONFIG.baseUrl}${API_CONFIG.phatRestaurants}/${id}${API_CONFIG.phatReviews}`)
+    .map(response => response.json())
+    .catch(ErrorHandler.handlerError);
+  }
 }
