@@ -6,14 +6,16 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/header/header.component';
-import { FooterComponent } from './pages/footer/footer.component'
+import { FooterComponent } from './pages/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
