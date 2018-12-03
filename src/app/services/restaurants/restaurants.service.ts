@@ -1,3 +1,4 @@
+import { MenuItemModel } from './../../models/restaurant/menu-item.model';
 import { ErrorHandler } from './../erros/app.error-handler';
 import { Http } from '@angular/http';
 import { RestaurantModel } from './../../models/restaurant/restaurant.model';
@@ -32,4 +33,11 @@ export class RestaurantService {
     .map(response => response.json())
     .catch(ErrorHandler.handlerError);
   }
+
+  menuOfRestaurant(id: string): Observable<MenuItemModel[]> {
+    return this.http.get(`${API_CONFIG.baseUrl}${API_CONFIG.phatRestaurants}/${id}${API_CONFIG.phatMenu}`)
+    .map(response => response.json())
+    .catch(ErrorHandler.handlerError);
+  }
+
 }
