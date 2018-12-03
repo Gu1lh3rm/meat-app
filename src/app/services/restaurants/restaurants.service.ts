@@ -16,7 +16,7 @@ export class RestaurantService {
   constructor(private http: Http){}
 
   findAllRestaurants(): Observable<RestaurantModel[]> {
-      return this.http.get(`${API_CONFIG.baseUrl}${API_CONFIG.phatRestaurants}1`)
+      return this.http.get(`${API_CONFIG.baseUrl}${API_CONFIG.phatRestaurants}`)
       .map(response => response.json())
       .catch(ErrorHandler.handlerError);
   }

@@ -2,9 +2,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import {Routes} from '@angular/router'
 import { RestaurantsComponent } from './pages/restaurants/restaurants.component';
+import { RestaurantDetailComponent } from './pages/restaurant-detail/restaurant-detail.component';
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'restaurants', component: RestaurantsComponent}
+  {path: 'restaurants', component: RestaurantsComponent},
+  {path: 'restaurants-detail/:id', component: RestaurantDetailComponent}
 ]

@@ -12,7 +12,11 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { RestaurantsComponent } from './pages/restaurants/restaurants.component';
-import { RestaurantComponent } from './pages/restaurants/restaurant/restaurant.component'
+import { RestaurantComponent } from './pages/restaurants/restaurant/restaurant.component';
+import { RestaurantDetailComponent } from './pages/restaurant-detail/restaurant-detail.component';
+import { ShoppingCartComponent } from './pages/restaurant-detail/shopping-cart/shopping-cart.component';
+import { MenuItemComponent } from './pages/restaurant-detail/menu-item/menu-item.component';
+import { MenuComponent } from './pages/restaurant-detail/menu/menu.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { RestaurantComponent } from './pages/restaurants/restaurant/restaurant.c
     HomeComponent,
     AboutComponent,
     RestaurantsComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    RestaurantDetailComponent,
+    ShoppingCartComponent,
+    MenuItemComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
