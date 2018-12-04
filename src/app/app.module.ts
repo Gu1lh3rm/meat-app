@@ -21,6 +21,7 @@ import { ReviewsComponent } from './pages/restaurant-detail/reviews/reviews.comp
 import { ShoppingCartService } from './services/cart-item/shopping-cart.service';
 import { OrderComponent } from './pages/order/order.component';
 import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
 
 
 
@@ -39,7 +40,8 @@ import { InputComponent } from './shared/input/input.component';
     MenuComponent,
     ReviewsComponent,
     OrderComponent,
-    InputComponent
+    InputComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,
