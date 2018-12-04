@@ -20,6 +20,7 @@ import { MenuComponent } from './pages/restaurant-detail/menu/menu.component';
 import { ReviewsComponent } from './pages/restaurant-detail/reviews/reviews.component';
 import { ShoppingCartService } from './services/cart-item/shopping-cart.service';
 import { OrderComponent } from './pages/order/order.component';
+import { InputComponent } from './shared/input/input.component';
 
 
 
@@ -37,7 +38,8 @@ import { OrderComponent } from './pages/order/order.component';
     MenuItemComponent,
     MenuComponent,
     ReviewsComponent,
-    OrderComponent
+    OrderComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
